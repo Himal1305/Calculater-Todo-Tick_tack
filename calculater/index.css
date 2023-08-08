@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.main-cal{
+    background-color: black;
+    border-radius: 10px;
+    width: 350px;
+    padding-bottom: 2rem;
+}
+.heading{
+    margin: 1rem 1rem;
+    font-size: 3rem;
+}
+
+
+.output input{
+    height: 7rem;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    text-align: right;
+    font-size:3rem;
+    border-radius: 10px;
+   
+}
+.input-cal{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    
+    justify-items: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 5px;
+    background-color: black;
+    
+}
+
+
+.box{
+    color: white;
+    font-size:2rem;
+    font-weight: bold;
+    height: 4rem;
+    width: 4rem;
+    background-color: gray;
+    border:none;
+    
+    /* border: 2px solid black; */
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.2s ;
+    /* border: 2px solid rgb(180, 176, 176); */
+    
+}
+
+.box:hover{
+    cursor: pointer;
+
+}
+.box:active{
+    background-color: rgb(189, 186, 186);
+}
+
+.last-cal{
+    font-size:2rem;
+    font-weight: bold;
+    grid-column-start:1;
+    grid-column-end:span 2;
+    background-color: gray;
+    color: white;
+    border:none;
+    display: flex;
+    align-items: center;
+    justify-content:start;
+    height: 4rem;
+    width: 94%;
+    border-radius: 85px;
+    padding-left: 1rem;
+    transition: all 0.2s ;
+    /* border: 2px solid rgb(180, 176, 176); */
+  
+}
+
+.last-cal:hover{
+    cursor: pointer;
+
+}
+.last-cal:active{
+    background-color: rgb(189, 186, 186);
+}
+
+
+.bg-y{
+    background-color: rgb(230, 203, 0);
+
+}
+.bg-y:active{
+    background-color:rgb(217, 217, 217);
+}
